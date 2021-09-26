@@ -1,0 +1,92 @@
+@startuml class3
+
+class Matrix
+{
+    - Line[] lines;
+    + int length;
+    + int width;
+    + put()
+    + get()
+    + toString()
+    + toArray()
+}
+
+class Line
+{
+    - Position[] positions
+    + put()
+    + get()
+    + toString()
+    + toArray()
+}
+
+class Position
+{
+    + Linable linable
+    + setLinable()
+}
+
+interface Linable
+{
+    + setPosition()
+    + getPosition()
+    + getValue()
+}
+
+Matrix "1" *-- "n" Line
+Line "1" *-- "n" Position
+Position "1" *-- "1" Linable
+
+class BubbleSorter
+{
+    - int[] a
+    - String plan
+    - swap()
+}
+
+class MergeSorter
+{
+    - int[] a
+    - String plan
+    - mergesort()
+    - merge()
+}
+
+interface Sorter
+{
+    + load()
+    + sort()
+    + getPlan()
+}
+
+BubbleSorter <|--Sorter
+MergeSorter <|--Sorter
+
+class Monster
+{
+    - int r
+    - int g
+    - int b
+    - int rank
+    - Position position
+    + toString()
+    + swapPosition()
+}
+
+Monster <|-- Linable
+
+class Snake
+{
+    - Snake theSnake
+    - Sorter sorter
+    + getTheSnake()
+    + setSorter()
+    + lineup()
+    + matrixup()
+    - parsePlan()
+    - execute()
+}
+
+Snake "1" *-- "1" Sorter
+
+@enduml

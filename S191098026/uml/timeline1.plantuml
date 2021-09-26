@@ -1,0 +1,31 @@
+@startuml
+
+entity line
+actor ONE
+actor TWO
+actor THREE
+actor FOUR
+actor FIVE
+actor SIX
+actor SEVEN
+actor theGeezer
+entity sorter
+entity log
+entity writer
+
+line -> ONE : put
+line -> TWO : put
+line -> THREE : put
+line -> FOUR : put
+line -> FIVE : put
+line -> SIX : put
+line -> SEVEN : put
+
+theGeezer -> theGeezer : getTheGeezer
+theGeezer -> sorter : setSorter
+theGeezer -> log : lineup
+writer -> log : write
+writer -> writer : flush
+writer -> writer : close
+
+@enduml
