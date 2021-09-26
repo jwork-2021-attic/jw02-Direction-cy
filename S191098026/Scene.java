@@ -64,13 +64,7 @@ public class Scene {
                 randint = rand.nextInt(256);
             }while (flag2[randint]);
             flag2[randint] = true;
-            System.out.println(randint);
             matrix.put(new Monster(color[randint][0],color[randint][1],color[randint][2], randint), i / 16, i % 16);
-        }
-
-        for (int i = 0; i < 256; ++i)
-        {
-            System.out.print(matrix.get(i / 16, i % 16).getValue());
         }
 
         Snake theSnake = Snake.getTheSnake();
