@@ -1,7 +1,11 @@
 ## 任务一 ##
 1. example的类图
-    
+
+    ![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jwork-2021/jw02-Direction-cy/master/S191098026/uml/class1.plantuml)
+
     main方法执行过程中的对象时序图
+
+    ![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jwork-2021/jw02-Direction-cy/master/S191098026/uml/timeline1.plantuml)
 
 2. example设计了纯抽象可排列接口Linable，具有跟位置Position相关一些方法，可以完成跟Position的一一对应关系。
 
@@ -32,12 +36,18 @@
 ## 任务二 ##
 1. 类图如下
 
+    ![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jwork-2021/jw02-Direction-cy/master/S191098026/uml/class2.plantuml)
+
 2. 可视化结果如下，采用归并排序
+
     [![asciicast](https://asciinema.org/a/90CYw7A2jayfaypKEett5KKty.svg)](https://asciinema.org/a/90CYw7A2jayfaypKEett5KKty)
 
 
 ## 任务三 ##
 1. 类图如下
 
+    ![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jwork-2021/jw02-Direction-cy/master/S191098026/uml/class3.plantuml)
+
 2. 可视化结果如下，采用归并排序
+
     [![asciicast](https://asciinema.org/a/4kZR4oSKQJ6icqlmMdqpL4IYM.svg)](https://asciinema.org/a/4kZR4oSKQJ6icqlmMdqpL4IYM)
